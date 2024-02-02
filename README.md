@@ -1,3 +1,5 @@
+# WARNING: THIS PROJECT IS IN BETA AND NOT FINISHED
+
 Hey, thanks for stopping by.
 
 What you see here is a bot, that needed no coding, no botghost and was made with python.
