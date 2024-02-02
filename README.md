@@ -13,13 +13,15 @@ To make this bot, you must first install python. (For linux users, you only need
 For Windows users, download the latest python installer from https://www.python.org/downloads/windows/
 (Select windows installer 64 bit)
 
+NOTE: You must be on Windows 10 (Latest, 64 bit) or Windows 11 for this to work.
+
 [IMAGE]
 
 Once Downloded run the python installer.
 
 [PICTURE OF PYTHON INSTALLER]
 
-(Windows instructions)
+# Windows instructions
 
 Make sure to select “Install python to PATH” and keep the other option on.
 
@@ -62,7 +64,7 @@ Copy the generated url and paste it into your browser.
 
 Now add the bot to your server, and you’re all set!
 
-(For linux users)
+# For linux users
 
 Install python-pip and git.
 
@@ -101,8 +103,10 @@ Copy the generated url and paste it into your browser.
 Now add the bot to your server, and you’re all set!
 
 
-Need video tutorials?
+# Need help?
 
-Link for windows tutorial
+Watch the video tutorials if the instructions did not work.
 
-Link for linux tutorial
+Windows:
+
+Linux:
