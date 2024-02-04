@@ -15,6 +15,10 @@ And what this project REALLY is. It’s a botghost-like bot, but with no waterma
 
 To setup this bot, feel free to watch the video turorial.
 
-Windows turorial:
+Windows turorial: Coming Soon
 
-Linux tutorial:
+Linux tutorial: Coming Soon
+
+If you do not want to watch a tutorial, feel free to follow this tutorial.
+
+GOOGLE DOCS LINK
