@@ -21,4 +21,4 @@ Linux tutorial: Coming Soon
 
 If you do not want to watch a tutorial, feel free to follow this tutorial.
 
-(https://docs.google.com/document/d/13ZtViUFb_3sjOvnaN8ckg760jvFmrcx99Wqf5zzJ7jQ/edit)https://docs.google.com/document/d/13ZtViUFb_3sjOvnaN8ckg760jvFmrcx99Wqf5zzJ7jQ/edit
+https://docs.google.com/document/d/13ZtViUFb_3sjOvnaN8ckg760jvFmrcx99Wqf5zzJ7jQ/edit
