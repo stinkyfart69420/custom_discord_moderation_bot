@@ -13,4 +13,8 @@ And what this project REALLY is. It’s a botghost-like bot, but with no waterma
 
 # HOW TO SETUP
 
-To setup this bot, all you have to do is to run the setup.py file and it will do everything for you. (Make sure you created a bot with all itents enabled at https://discord.com/developers/applications )
+To setup this bot, all you have to do is to run the setup.py file and it will do everything for you. (Make sure you created a bot with all intents enabled at https://discord.com/developers/applications )
+
+# Need help?
+
+You can contact notsusgecc@gmail.com for help.
