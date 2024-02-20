@@ -34,16 +34,13 @@ async def on_ready():
     
 @bot.command(name='warn', help='Warns a member. ||Usage: -warn @user reason||')
 async def warn(ctx, user: discord.Member, *, reason: str):
-    # Check if the command user has admin permissions
     if ctx.author.guild_permissions.administrator:
-        # Log the warning to the database
         cursor.execute('''
             INSERT INTO warnings (user_id, moderator_id, reason)
             VALUES (?, ?, ?)
         ''', (user.id, ctx.author.id, reason))
         conn.commit()
 
-        # Send a confirmation message
         await ctx.send(f'{user.mention} has been warned for: {reason}')
     else:
         await ctx.send('You do not have permission to use this command.')
@@ -53,7 +50,6 @@ async def warn(ctx, user: discord.Member, *, reason: str):
 @bot.command(name='warnings', help='Check for warnings for a specified member. ||Usage: -warnings @user||')
 async def view_warnings(ctx, user: discord.Member):
     if ctx.author.guild_permissions.administrator:
-        # Retrieve warnings from the database for the specified user
         cursor.execute('''
             SELECT moderator_id, reason
             FROM warnings
@@ -62,7 +58,6 @@ async def view_warnings(ctx, user: discord.Member):
         warnings = cursor.fetchall()
 
         if warnings:
-            # Format and send the warnings as a message
             warning_list = '\n'.join([f'Moderator: {bot.get_user(w[0])}, Reason: {w[1]}' for w in warnings])
             await ctx.send(f'Warnings for {user.mention}:\n{warning_list}')
         else:
@@ -71,7 +66,6 @@ async def view_warnings(ctx, user: discord.Member):
 @bot.command(name='unwarn', help='Unwarns a member ||Usage: -unwarn @user number of warnings to be removed||')
 async def unwarn(ctx, user: discord.Member, warning_number: int):
     if ctx.author.guild_permissions.administrator:
-        # Retrieve the specified warning for the user from the database
         cursor.execute('''
             SELECT moderator_id, reason
             FROM warnings
@@ -80,7 +74,6 @@ async def unwarn(ctx, user: discord.Member, warning_number: int):
         warnings = cursor.fetchall()
 
         if warnings and 0 < warning_number <= len(warnings):
-            # Remove the specified warning from the database
             moderator_id, reason = warnings[warning_number - 1]
             cursor.execute('''
                 DELETE FROM warnings
@@ -99,10 +92,8 @@ async def unwarn(ctx, user: discord.Member, warning_number: int):
 @bot.command(name="kick",help='Kicks a member. ||Usage: -kick @user reason||')
 @commands.has_permissions(kick_members=True)
 async def kick(ctx, member: discord.Member, *, reason="No reason provided"):
-    # Kick the member
     await member.kick(reason=reason)
 
-    # Send a DM to the kicked member
     try:
         await member.send(f"You have been kicked from the server by *{ctx.author.display_name}*. Reason: {reason}")
     except discord.Forbidden:
@@ -167,14 +158,12 @@ async def ban(ctx, member: discord.Member, *, reason="No reason provided"):
 async def mute(ctx, member: discord.Member):
     
     if ctx.author.guild_permissions.manage_roles:
-        # Get the "Muted" role or create it if it doesn't exist
         muted_role = discord.utils.get(ctx.guild.roles, name="Muted")
         if not muted_role:
             muted_role = await ctx.guild.create_role(name="Muted")
             for channel in ctx.guild.channels:
                 await channel.set_permissions(muted_role, send_messages=False)
         
-        # Add the Muted role to the mentioned member
         await member.add_roles(muted_role)
         await ctx.send(f'{member.mention} has been muted.')
     else:
@@ -184,14 +173,12 @@ async def mute(ctx, member: discord.Member):
 async def unmute(ctx, member: discord.Member):
     
     if ctx.author.guild_permissions.manage_roles:
-        # Get the "Muted" role or create it if it doesn't exist
         muted_role = discord.utils.get(ctx.guild.roles, name="Muted")
         if not muted_role:
             muted_role = await ctx.guild.create_role(name="Muted")
             for channel in ctx.guild.channels:
                 await channel.set_permissions(muted_role, send_messages=False)
         
-        # Add the Muted role to the mentioned member
         await member.remove_roles(muted_role)
         await ctx.send(f'{member.mention} has been unmuted.')
     else:
@@ -216,7 +203,7 @@ async def purge(ctx, limit: int):
     
 @bot.command(name='ping', help='Pong!')
 async def ping(ctx):
-    latency = round(bot.latency * 1000)  # Ping in milliseconds
+    latency = round(bot.latency * 1000) 
     await ctx.send(f'Pong! Latency: {latency}ms')
 
 @bot.command()
