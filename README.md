@@ -19,7 +19,7 @@ To setup this bot, all you have to do is to run the setup.py file and it will do
 
 For hosting, the script will run on your computer as main.py
 
-If you want to host it on your VPS or something, just transfer the main.py file to your server or VPS (whatever it is)
+If you want to host it on your VPS or something, just transfer the main.py file to your server or VPS (whatever it is) and run "pip install -r requirements.txt" before running main.py
 
 # Need help?
 
