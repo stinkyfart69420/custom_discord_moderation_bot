@@ -13,12 +13,4 @@ And what this project REALLY is. It’s a botghost-like bot, but with no waterma
 
 # HOW TO SETUP
 
-To setup this bot, feel free to watch the video turorial.
-
-Windows turorial: Coming Soon
-
-Linux tutorial: Coming Soon
-
-If you do not want to watch a tutorial, feel free to follow this tutorial.
-
-https://docs.google.com/document/d/13ZtViUFb_3sjOvnaN8ckg760jvFmrcx99Wqf5zzJ7jQ/edit
+To setup this bot, all you have to do is to run the setup.py file and it will do everything for you. (Make sure you created a bot with all itents enabled at https://discord.com/developers/applications )
