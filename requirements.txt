@@ -1,0 +1,4 @@
+discord.py
+accuweather
+urbandictionary_top
+requests
