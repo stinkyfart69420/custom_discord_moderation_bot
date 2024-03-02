@@ -23,4 +23,4 @@ If you want to host it on your VPS or something, just transfer the main.py file 
 
 # Need help?
 
-You can contact notsusgecc@gmail.com for help.
+You can contact linuxnerd_1@proton.me for help.
