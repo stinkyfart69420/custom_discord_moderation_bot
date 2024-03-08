@@ -22,3 +22,9 @@ If you want to host it on your VPS or something, just transfer the main.py file 
 # Need help?
 
 You can contact linuxnerd_1@proton.me for help.
+
+# Additional info.
+
+For the weather command, you must provide your own AccuWeather API key.
+
+If the bot does not start, make sure all the intens are enabled.
