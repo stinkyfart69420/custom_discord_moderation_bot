@@ -11,7 +11,7 @@ And what this project REALLY is. It’s a botghost-like bot, but with no waterma
 
 # HOW TO SETUP
 
-To setup this bot, all you have to do is to run the main.py file and it will do everything for you. (Make sure you created a bot with all intents enabled at https://discord.com/developers/applications )
+To setup this bot, all you have to do is to run the ```setup.py``` file and it will do everything for you. (Make sure you created a bot with all intents enabled at https://discord.com/developers/applications )
 
 # Hosting.
 
@@ -28,3 +28,8 @@ You can contact linuxnerd_1@proton.me for help.
 For the weather command, you must provide your own AccuWeather API key.
 
 If the bot does not start, make sure all the intens are enabled.
+
+# reset the bot to it's default:
+```
+puyhon setup.py --reset
+```

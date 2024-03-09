@@ -216,4 +216,4 @@ async def commands(ctx):
     await ctx.send(embed=embed)
 
 
-bot.run("123")
+bot.run("[TOKEN]")
