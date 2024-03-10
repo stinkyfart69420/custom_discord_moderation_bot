@@ -31,5 +31,5 @@ If the bot does not start, make sure all the intens are enabled.
 
 # reset the bot to it's default:
 ```
-puyhon setup.py --reset
+python3 setup.py --reset
 ```
