@@ -1,3 +1,5 @@
+# THIS PROJECT HAS BEEN DISCONTINUED AND UNMAINTAINED. THE BOT WILL STILL WORK AS NORMAL.
+
 Hey, thanks for stopping by.
 
 What you see here is a bot, that needed no coding, no botghost and was made with python.
